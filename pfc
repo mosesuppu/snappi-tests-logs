@@ -1,0 +1,13 @@
+FAILED snappi_tests/pfc/test_m2o_fluctuating_lossless.py::test_m2o_fluctuating_lossless[400.0-single_linecard_single_asic] - Failed: Each Background Flow must have an avg of 10% loss
+FAILED snappi_tests/pfc/test_pfc_pause_lossy_with_snappi.py::test_pfc_pause_single_lossy_prio[multidut_port_info0-crdc-garnet-sonic-ud|0-400.0-single_linecard_single_asic] - Failed: Test Flow Prio 0 should not have any dropped packet
+FAILED snappi_tests/pfc/test_pfc_pause_lossy_with_snappi.py::test_pfc_pause_single_lossy_prio[multidut_port_info0-crdc-garnet-sonic-ud|1-400.0-single_linecard_single_asic] - Failed: Background Flow Prio 3 should not have any dropped packet
+FAILED snappi_tests/pfc/test_pfc_pause_lossy_with_snappi.py::test_pfc_pause_single_lossy_prio[multidut_port_info0-crdc-garnet-sonic-ud|2-400.0-single_linecard_single_asic] - Failed: Test Flow Prio 2 should not have any dropped packet
+FAILED snappi_tests/pfc/test_pfc_pause_lossy_with_snappi.py::test_pfc_pause_single_lossy_prio[multidut_port_info0-crdc-garnet-sonic-ud|5-400.0-single_linecard_single_asic] - Failed: Test Flow Prio 5 should not have any dropped packet
+FAILED snappi_tests/pfc/test_pfc_pause_lossy_with_snappi.py::test_pfc_pause_single_lossy_prio[multidut_port_info0-crdc-garnet-sonic-ud|6-400.0-single_linecard_single_asic] - Failed: Test Flow Prio 6 should not have any dropped packet
+FAILED snappi_tests/pfc/test_pfc_pause_lossy_with_snappi.py::test_pfc_pause_multi_lossy_prio[multidut_port_info0-400.0-single_linecard_single_asic] - Failed: Test Flow Prio 1 should not have any dropped packet
+FAILED snappi_tests/pfc/test_valid_pfc_frame_with_snappi.py::test_valid_pfc_frame - Failed: Flows do not stop in 20 seconds
+FAILED snappi_tests/pfc/warm_reboot/test_pfc_pause_lossless_warm_reboot.py::test_pfc_pause_single_lossless_prio_reboot[warm] - tests.common.errors.RunAnsibleModuleFail: run module shell failed, Ansible Results =>
+FAILED snappi_tests/pfc/warm_reboot/test_pfc_pause_lossless_warm_reboot.py::test_pfc_pause_single_lossless_prio_reboot[fast] - tests.common.errors.RunAnsibleModuleFail: run module shell failed, Ansible Results =>
+FAILED snappi_tests/pfc/warm_reboot/test_pfc_pause_lossless_warm_reboot.py::test_pfc_pause_multi_lossless_prio_reboot[warm] - Failed: ARP is not resolved in 60 seconds
+FAILED snappi_tests/pfc/warm_reboot/test_pfc_pause_lossless_warm_reboot.py::test_pfc_pause_multi_lossless_prio_reboot[fast] - tests.common.errors.RunAnsibleModuleFail: run module shell failed, Ansible Results =>
+========================================= 12 failed, 21 passed, 18 skipped, 117 warnings, 14 errors in 15984.42s (4:26:24) ==========================================
