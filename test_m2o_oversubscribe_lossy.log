@@ -1,0 +1,2040 @@
+13/11/2025 12:52:17 conftest.pytest_sessionstart             L0481 INFO   | Invoking /data/harshit/sonic-mgmt/tests/build-gnmi-stubs.sh with base directory: /data/harshit/sonic-mgmt/tests
+13/11/2025 12:52:19 conftest.pytest_sessionstart             L0491 INFO   | Output of /data/harshit/sonic-mgmt/tests/build-gnmi-stubs.sh:
+Removing existing directory: /data/harshit/sonic-mgmt/tests/common/sai_validation/github.com/openconfig
+Creating directory: /data/harshit/sonic-mgmt/tests/common/sai_validation/github.com/openconfig
+Removing existing directory: /data/harshit/sonic-mgmt/tests/common/sai_validation/generated
+Creating directory: /data/harshit/sonic-mgmt/tests/common/sai_validation/generated
+Cloning https://github.com/openconfig/gnmi.git into /data/harshit/sonic-mgmt/tests/common/sai_validation/github.com/openconfig
+Generating gRPC stubs...
+gRPC stubs generated successfully.
+Creating empty __init__.py files under /data/harshit/sonic-mgmt/tests/common/sai_validation/generated/github/
+Moving generated files to correct locations...
+Files moved successfully.
+Removing /data/harshit/sonic-mgmt/tests/common/sai_validation/generated/github.com directory...
+/data/harshit/sonic-mgmt/tests/common/sai_validation/generated/github.com directory removed successfully.
+
+13/11/2025 12:52:19 conftest.pytest_sessionstart             L0502 INFO   | Added /data/harshit/sonic-mgmt/tests/common/sai_validation/generated to sys.path
+13/11/2025 12:52:20 __init__.pytest_collection_modifyitems   L0664 INFO   | Available basic facts that can be used in conditional skip:
+{
+  "topo_type": "ptf",
+  "topo_name": "ptf64",
+  "testbed": "vms-snappi-sonic",
+  "asic_subtype": "broadcom",
+  "asic_type": "broadcom",
+  "branch": "202505",
+  "build_date": "Thu Nov  6 23:47:13 UTC 2025",
+  "build_number": 29,
+  "build_version": "202505.29-dirty-20251106.112914",
+  "built_by": "_devpublish@qnc-sonic-05",
+  "commit_id": "c4bbc9931",
+  "debian_version": "12.12",
+  "feature_status": {
+    "bgp": "enabled",
+    "bmp": "enabled",
+    "database": "always_enabled",
+    "dhcp_relay": "disabled",
+    "eventd": "enabled",
+    "frr_bmp": "enabled",
+    "gnmi": "enabled",
+    "lldp": "enabled",
+    "macsec": "disabled",
+    "mgmt-framework": "enabled",
+    "mux": "always_disabled",
+    "nat": "disabled",
+    "pmon": "enabled",
+    "radv": "enabled",
+    "sflow": "disabled",
+    "snmp": "enabled",
+    "swss": "enabled",
+    "syncd": "enabled",
+    "teamd": "enabled",
+    "telemetry": "disabled"
+  },
+  "hwsku": "Juniper-QFX5241-64-OD",
+  "is_chassis": false,
+  "is_dpu": false,
+  "is_mgmt_ipv6_only": false,
+  "is_multi_asic": false,
+  "is_smartswitch": false,
+  "is_supervisor": false,
+  "kernel_version": "6.1.0",
+  "libswsscommon": "1.0.0",
+  "num_asic": 1,
+  "platform": "x86_64-juniper_qfx5241-r0",
+  "release": "202505",
+  "secure_boot_image": "no",
+  "sonic_os_version": 12,
+  "sonic_utilities": 1.2,
+  "asic_gen": "unknown",
+  "minigraph_interfaces": [
+    {
+      "addr": "10.0.0.0",
+      "attachto": "Ethernet0",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.1",
+      "prefixlen": 31,
+      "subnet": "10.0.0.0/31"
+    },
+    {
+      "addr": "fc00::1",
+      "attachto": "Ethernet0",
+      "mask": "126",
+      "peer_addr": "fc00::2",
+      "prefixlen": 126,
+      "subnet": "fc00::/126"
+    },
+    {
+      "addr": "10.0.0.26",
+      "attachto": "Ethernet104",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.27",
+      "prefixlen": 31,
+      "subnet": "10.0.0.26/31"
+    },
+    {
+      "addr": "fc00::35",
+      "attachto": "Ethernet104",
+      "mask": "126",
+      "peer_addr": "fc00::36",
+      "prefixlen": 126,
+      "subnet": "fc00::34/126"
+    },
+    {
+      "addr": "10.0.0.28",
+      "attachto": "Ethernet112",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.29",
+      "prefixlen": 31,
+      "subnet": "10.0.0.28/31"
+    },
+    {
+      "addr": "fc00::39",
+      "attachto": "Ethernet112",
+      "mask": "126",
+      "peer_addr": "fc00::3a",
+      "prefixlen": 126,
+      "subnet": "fc00::38/126"
+    },
+    {
+      "addr": "10.0.0.30",
+      "attachto": "Ethernet120",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.31",
+      "prefixlen": 31,
+      "subnet": "10.0.0.30/31"
+    },
+    {
+      "addr": "fc00::3d",
+      "attachto": "Ethernet120",
+      "mask": "126",
+      "peer_addr": "fc00::3e",
+      "prefixlen": 126,
+      "subnet": "fc00::3c/126"
+    },
+    {
+      "addr": "10.0.0.32",
+      "attachto": "Ethernet128",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.33",
+      "prefixlen": 31,
+      "subnet": "10.0.0.32/31"
+    },
+    {
+      "addr": "fc00::41",
+      "attachto": "Ethernet128",
+      "mask": "126",
+      "peer_addr": "fc00::42",
+      "prefixlen": 126,
+      "subnet": "fc00::40/126"
+    },
+    {
+      "addr": "10.0.0.34",
+      "attachto": "Ethernet136",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.35",
+      "prefixlen": 31,
+      "subnet": "10.0.0.34/31"
+    },
+    {
+      "addr": "fc00::45",
+      "attachto": "Ethernet136",
+      "mask": "126",
+      "peer_addr": "fc00::46",
+      "prefixlen": 126,
+      "subnet": "fc00::44/126"
+    },
+    {
+      "addr": "10.0.0.36",
+      "attachto": "Ethernet144",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.37",
+      "prefixlen": 31,
+      "subnet": "10.0.0.36/31"
+    },
+    {
+      "addr": "fc00::49",
+      "attachto": "Ethernet144",
+      "mask": "126",
+      "peer_addr": "fc00::4a",
+      "prefixlen": 126,
+      "subnet": "fc00::48/126"
+    },
+    {
+      "addr": "10.0.0.38",
+      "attachto": "Ethernet152",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.39",
+      "prefixlen": 31,
+      "subnet": "10.0.0.38/31"
+    },
+    {
+      "addr": "fc00::4d",
+      "attachto": "Ethernet152",
+      "mask": "126",
+      "peer_addr": "fc00::4e",
+      "prefixlen": 126,
+      "subnet": "fc00::4c/126"
+    },
+    {
+      "addr": "10.0.0.4",
+      "attachto": "Ethernet16",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.5",
+      "prefixlen": 31,
+      "subnet": "10.0.0.4/31"
+    },
+    {
+      "addr": "fc00::9",
+      "attachto": "Ethernet16",
+      "mask": "126",
+      "peer_addr": "fc00::a",
+      "prefixlen": 126,
+      "subnet": "fc00::8/126"
+    },
+    {
+      "addr": "10.0.0.40",
+      "attachto": "Ethernet160",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.41",
+      "prefixlen": 31,
+      "subnet": "10.0.0.40/31"
+    },
+    {
+      "addr": "fc00::51",
+      "attachto": "Ethernet160",
+      "mask": "126",
+      "peer_addr": "fc00::52",
+      "prefixlen": 126,
+      "subnet": "fc00::50/126"
+    },
+    {
+      "addr": "10.0.0.42",
+      "attachto": "Ethernet168",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.43",
+      "prefixlen": 31,
+      "subnet": "10.0.0.42/31"
+    },
+    {
+      "addr": "fc00::55",
+      "attachto": "Ethernet168",
+      "mask": "126",
+      "peer_addr": "fc00::56",
+      "prefixlen": 126,
+      "subnet": "fc00::54/126"
+    },
+    {
+      "addr": "10.0.0.44",
+      "attachto": "Ethernet176",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.45",
+      "prefixlen": 31,
+      "subnet": "10.0.0.44/31"
+    },
+    {
+      "addr": "fc00::59",
+      "attachto": "Ethernet176",
+      "mask": "126",
+      "peer_addr": "fc00::5a",
+      "prefixlen": 126,
+      "subnet": "fc00::58/126"
+    },
+    {
+      "addr": "10.0.0.46",
+      "attachto": "Ethernet184",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.47",
+      "prefixlen": 31,
+      "subnet": "10.0.0.46/31"
+    },
+    {
+      "addr": "fc00::5d",
+      "attachto": "Ethernet184",
+      "mask": "126",
+      "peer_addr": "fc00::5e",
+      "prefixlen": 126,
+      "subnet": "fc00::5c/126"
+    },
+    {
+      "addr": "10.0.0.48",
+      "attachto": "Ethernet192",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.49",
+      "prefixlen": 31,
+      "subnet": "10.0.0.48/31"
+    },
+    {
+      "addr": "fc00::61",
+      "attachto": "Ethernet192",
+      "mask": "126",
+      "peer_addr": "fc00::62",
+      "prefixlen": 126,
+      "subnet": "fc00::60/126"
+    },
+    {
+      "addr": "10.0.0.50",
+      "attachto": "Ethernet200",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.51",
+      "prefixlen": 31,
+      "subnet": "10.0.0.50/31"
+    },
+    {
+      "addr": "fc00::65",
+      "attachto": "Ethernet200",
+      "mask": "126",
+      "peer_addr": "fc00::66",
+      "prefixlen": 126,
+      "subnet": "fc00::64/126"
+    },
+    {
+      "addr": "10.0.0.52",
+      "attachto": "Ethernet208",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.53",
+      "prefixlen": 31,
+      "subnet": "10.0.0.52/31"
+    },
+    {
+      "addr": "fc00::69",
+      "attachto": "Ethernet208",
+      "mask": "126",
+      "peer_addr": "fc00::6a",
+      "prefixlen": 126,
+      "subnet": "fc00::68/126"
+    },
+    {
+      "addr": "10.0.0.54",
+      "attachto": "Ethernet216",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.55",
+      "prefixlen": 31,
+      "subnet": "10.0.0.54/31"
+    },
+    {
+      "addr": "fc00::6d",
+      "attachto": "Ethernet216",
+      "mask": "126",
+      "peer_addr": "fc00::6e",
+      "prefixlen": 126,
+      "subnet": "fc00::6c/126"
+    },
+    {
+      "addr": "10.0.0.56",
+      "attachto": "Ethernet224",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.57",
+      "prefixlen": 31,
+      "subnet": "10.0.0.56/31"
+    },
+    {
+      "addr": "fc00::71",
+      "attachto": "Ethernet224",
+      "mask": "126",
+      "peer_addr": "fc00::72",
+      "prefixlen": 126,
+      "subnet": "fc00::70/126"
+    },
+    {
+      "addr": "10.0.0.58",
+      "attachto": "Ethernet232",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.59",
+      "prefixlen": 31,
+      "subnet": "10.0.0.58/31"
+    },
+    {
+      "addr": "fc00::75",
+      "attachto": "Ethernet232",
+      "mask": "126",
+      "peer_addr": "fc00::76",
+      "prefixlen": 126,
+      "subnet": "fc00::74/126"
+    },
+    {
+      "addr": "10.0.0.6",
+      "attachto": "Ethernet24",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.7",
+      "prefixlen": 31,
+      "subnet": "10.0.0.6/31"
+    },
+    {
+      "addr": "fc00::d",
+      "attachto": "Ethernet24",
+      "mask": "126",
+      "peer_addr": "fc00::e",
+      "prefixlen": 126,
+      "subnet": "fc00::c/126"
+    },
+    {
+      "addr": "10.0.0.60",
+      "attachto": "Ethernet240",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.61",
+      "prefixlen": 31,
+      "subnet": "10.0.0.60/31"
+    },
+    {
+      "addr": "fc00::79",
+      "attachto": "Ethernet240",
+      "mask": "126",
+      "peer_addr": "fc00::7a",
+      "prefixlen": 126,
+      "subnet": "fc00::78/126"
+    },
+    {
+      "addr": "10.0.0.62",
+      "attachto": "Ethernet248",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.63",
+      "prefixlen": 31,
+      "subnet": "10.0.0.62/31"
+    },
+    {
+      "addr": "fc00::7d",
+      "attachto": "Ethernet248",
+      "mask": "126",
+      "peer_addr": "fc00::7e",
+      "prefixlen": 126,
+      "subnet": "fc00::7c/126"
+    },
+    {
+      "addr": "10.0.0.64",
+      "attachto": "Ethernet256",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.65",
+      "prefixlen": 31,
+      "subnet": "10.0.0.64/31"
+    },
+    {
+      "addr": "fc00::81",
+      "attachto": "Ethernet256",
+      "mask": "126",
+      "peer_addr": "fc00::82",
+      "prefixlen": 126,
+      "subnet": "fc00::80/126"
+    },
+    {
+      "addr": "10.0.0.66",
+      "attachto": "Ethernet264",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.67",
+      "prefixlen": 31,
+      "subnet": "10.0.0.66/31"
+    },
+    {
+      "addr": "fc00::85",
+      "attachto": "Ethernet264",
+      "mask": "126",
+      "peer_addr": "fc00::86",
+      "prefixlen": 126,
+      "subnet": "fc00::84/126"
+    },
+    {
+      "addr": "10.0.0.68",
+      "attachto": "Ethernet272",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.69",
+      "prefixlen": 31,
+      "subnet": "10.0.0.68/31"
+    },
+    {
+      "addr": "fc00::89",
+      "attachto": "Ethernet272",
+      "mask": "126",
+      "peer_addr": "fc00::8a",
+      "prefixlen": 126,
+      "subnet": "fc00::88/126"
+    },
+    {
+      "addr": "10.0.0.70",
+      "attachto": "Ethernet280",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.71",
+      "prefixlen": 31,
+      "subnet": "10.0.0.70/31"
+    },
+    {
+      "addr": "fc00::8d",
+      "attachto": "Ethernet280",
+      "mask": "126",
+      "peer_addr": "fc00::8e",
+      "prefixlen": 126,
+      "subnet": "fc00::8c/126"
+    },
+    {
+      "addr": "10.0.0.72",
+      "attachto": "Ethernet288",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.73",
+      "prefixlen": 31,
+      "subnet": "10.0.0.72/31"
+    },
+    {
+      "addr": "fc00::91",
+      "attachto": "Ethernet288",
+      "mask": "126",
+      "peer_addr": "fc00::92",
+      "prefixlen": 126,
+      "subnet": "fc00::90/126"
+    },
+    {
+      "addr": "10.0.0.74",
+      "attachto": "Ethernet296",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.75",
+      "prefixlen": 31,
+      "subnet": "10.0.0.74/31"
+    },
+    {
+      "addr": "fc00::95",
+      "attachto": "Ethernet296",
+      "mask": "126",
+      "peer_addr": "fc00::96",
+      "prefixlen": 126,
+      "subnet": "fc00::94/126"
+    },
+    {
+      "addr": "10.0.0.76",
+      "attachto": "Ethernet304",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.77",
+      "prefixlen": 31,
+      "subnet": "10.0.0.76/31"
+    },
+    {
+      "addr": "fc00::99",
+      "attachto": "Ethernet304",
+      "mask": "126",
+      "peer_addr": "fc00::9a",
+      "prefixlen": 126,
+      "subnet": "fc00::98/126"
+    },
+    {
+      "addr": "10.0.0.78",
+      "attachto": "Ethernet312",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.79",
+      "prefixlen": 31,
+      "subnet": "10.0.0.78/31"
+    },
+    {
+      "addr": "fc00::9d",
+      "attachto": "Ethernet312",
+      "mask": "126",
+      "peer_addr": "fc00::9e",
+      "prefixlen": 126,
+      "subnet": "fc00::9c/126"
+    },
+    {
+      "addr": "10.0.0.8",
+      "attachto": "Ethernet32",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.9",
+      "prefixlen": 31,
+      "subnet": "10.0.0.8/31"
+    },
+    {
+      "addr": "fc00::11",
+      "attachto": "Ethernet32",
+      "mask": "126",
+      "peer_addr": "fc00::12",
+      "prefixlen": 126,
+      "subnet": "fc00::10/126"
+    },
+    {
+      "addr": "10.0.0.80",
+      "attachto": "Ethernet320",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.81",
+      "prefixlen": 31,
+      "subnet": "10.0.0.80/31"
+    },
+    {
+      "addr": "fc00::a1",
+      "attachto": "Ethernet320",
+      "mask": "126",
+      "peer_addr": "fc00::a2",
+      "prefixlen": 126,
+      "subnet": "fc00::a0/126"
+    },
+    {
+      "addr": "10.0.0.82",
+      "attachto": "Ethernet328",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.83",
+      "prefixlen": 31,
+      "subnet": "10.0.0.82/31"
+    },
+    {
+      "addr": "fc00::a5",
+      "attachto": "Ethernet328",
+      "mask": "126",
+      "peer_addr": "fc00::a6",
+      "prefixlen": 126,
+      "subnet": "fc00::a4/126"
+    },
+    {
+      "addr": "10.0.0.84",
+      "attachto": "Ethernet336",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.85",
+      "prefixlen": 31,
+      "subnet": "10.0.0.84/31"
+    },
+    {
+      "addr": "fc00::a9",
+      "attachto": "Ethernet336",
+      "mask": "126",
+      "peer_addr": "fc00::aa",
+      "prefixlen": 126,
+      "subnet": "fc00::a8/126"
+    },
+    {
+      "addr": "10.0.0.86",
+      "attachto": "Ethernet344",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.87",
+      "prefixlen": 31,
+      "subnet": "10.0.0.86/31"
+    },
+    {
+      "addr": "fc00::ad",
+      "attachto": "Ethernet344",
+      "mask": "126",
+      "peer_addr": "fc00::ae",
+      "prefixlen": 126,
+      "subnet": "fc00::ac/126"
+    },
+    {
+      "addr": "10.0.0.88",
+      "attachto": "Ethernet352",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.89",
+      "prefixlen": 31,
+      "subnet": "10.0.0.88/31"
+    },
+    {
+      "addr": "fc00::b1",
+      "attachto": "Ethernet352",
+      "mask": "126",
+      "peer_addr": "fc00::b2",
+      "prefixlen": 126,
+      "subnet": "fc00::b0/126"
+    },
+    {
+      "addr": "10.0.0.90",
+      "attachto": "Ethernet360",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.91",
+      "prefixlen": 31,
+      "subnet": "10.0.0.90/31"
+    },
+    {
+      "addr": "fc00::b5",
+      "attachto": "Ethernet360",
+      "mask": "126",
+      "peer_addr": "fc00::b6",
+      "prefixlen": 126,
+      "subnet": "fc00::b4/126"
+    },
+    {
+      "addr": "10.0.0.92",
+      "attachto": "Ethernet368",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.93",
+      "prefixlen": 31,
+      "subnet": "10.0.0.92/31"
+    },
+    {
+      "addr": "fc00::b9",
+      "attachto": "Ethernet368",
+      "mask": "126",
+      "peer_addr": "fc00::ba",
+      "prefixlen": 126,
+      "subnet": "fc00::b8/126"
+    },
+    {
+      "addr": "10.0.0.94",
+      "attachto": "Ethernet376",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.95",
+      "prefixlen": 31,
+      "subnet": "10.0.0.94/31"
+    },
+    {
+      "addr": "fc00::bd",
+      "attachto": "Ethernet376",
+      "mask": "126",
+      "peer_addr": "fc00::be",
+      "prefixlen": 126,
+      "subnet": "fc00::bc/126"
+    },
+    {
+      "addr": "10.0.0.96",
+      "attachto": "Ethernet384",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.97",
+      "prefixlen": 31,
+      "subnet": "10.0.0.96/31"
+    },
+    {
+      "addr": "fc00::c1",
+      "attachto": "Ethernet384",
+      "mask": "126",
+      "peer_addr": "fc00::c2",
+      "prefixlen": 126,
+      "subnet": "fc00::c0/126"
+    },
+    {
+      "addr": "10.0.0.98",
+      "attachto": "Ethernet392",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.99",
+      "prefixlen": 31,
+      "subnet": "10.0.0.98/31"
+    },
+    {
+      "addr": "fc00::c5",
+      "attachto": "Ethernet392",
+      "mask": "126",
+      "peer_addr": "fc00::c6",
+      "prefixlen": 126,
+      "subnet": "fc00::c4/126"
+    },
+    {
+      "addr": "10.0.0.10",
+      "attachto": "Ethernet40",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.11",
+      "prefixlen": 31,
+      "subnet": "10.0.0.10/31"
+    },
+    {
+      "addr": "fc00::15",
+      "attachto": "Ethernet40",
+      "mask": "126",
+      "peer_addr": "fc00::16",
+      "prefixlen": 126,
+      "subnet": "fc00::14/126"
+    },
+    {
+      "addr": "10.0.0.100",
+      "attachto": "Ethernet400",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.101",
+      "prefixlen": 31,
+      "subnet": "10.0.0.100/31"
+    },
+    {
+      "addr": "fc00::c9",
+      "attachto": "Ethernet400",
+      "mask": "126",
+      "peer_addr": "fc00::ca",
+      "prefixlen": 126,
+      "subnet": "fc00::c8/126"
+    },
+    {
+      "addr": "10.0.0.102",
+      "attachto": "Ethernet408",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.103",
+      "prefixlen": 31,
+      "subnet": "10.0.0.102/31"
+    },
+    {
+      "addr": "fc00::cd",
+      "attachto": "Ethernet408",
+      "mask": "126",
+      "peer_addr": "fc00::ce",
+      "prefixlen": 126,
+      "subnet": "fc00::cc/126"
+    },
+    {
+      "addr": "10.0.0.104",
+      "attachto": "Ethernet416",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.105",
+      "prefixlen": 31,
+      "subnet": "10.0.0.104/31"
+    },
+    {
+      "addr": "fc00::d1",
+      "attachto": "Ethernet416",
+      "mask": "126",
+      "peer_addr": "fc00::d2",
+      "prefixlen": 126,
+      "subnet": "fc00::d0/126"
+    },
+    {
+      "addr": "20.1.1.0",
+      "attachto": "Ethernet420",
+      "mask": "255.255.255.254",
+      "peer_addr": "20.1.1.1",
+      "prefixlen": 31,
+      "subnet": "20.1.1.0/31"
+    },
+    {
+      "addr": "2000:1::1",
+      "attachto": "Ethernet420",
+      "mask": "126",
+      "peer_addr": "2000:1::2",
+      "prefixlen": 126,
+      "subnet": "2000:1::/126"
+    },
+    {
+      "addr": "10.0.0.106",
+      "attachto": "Ethernet424",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.107",
+      "prefixlen": 31,
+      "subnet": "10.0.0.106/31"
+    },
+    {
+      "addr": "fc00::d5",
+      "attachto": "Ethernet424",
+      "mask": "126",
+      "peer_addr": "fc00::d6",
+      "prefixlen": 126,
+      "subnet": "fc00::d4/126"
+    },
+    {
+      "addr": "20.1.1.2",
+      "attachto": "Ethernet428",
+      "mask": "255.255.255.254",
+      "peer_addr": "20.1.1.3",
+      "prefixlen": 31,
+      "subnet": "20.1.1.2/31"
+    },
+    {
+      "addr": "2000:1::5",
+      "attachto": "Ethernet428",
+      "mask": "126",
+      "peer_addr": "2000:1::6",
+      "prefixlen": 126,
+      "subnet": "2000:1::4/126"
+    },
+    {
+      "addr": "10.0.0.108",
+      "attachto": "Ethernet432",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.109",
+      "prefixlen": 31,
+      "subnet": "10.0.0.108/31"
+    },
+    {
+      "addr": "fc00::d9",
+      "attachto": "Ethernet432",
+      "mask": "126",
+      "peer_addr": "fc00::da",
+      "prefixlen": 126,
+      "subnet": "fc00::d8/126"
+    },
+    {
+      "addr": "20.1.1.4",
+      "attachto": "Ethernet436",
+      "mask": "255.255.255.254",
+      "peer_addr": "20.1.1.5",
+      "prefixlen": 31,
+      "subnet": "20.1.1.4/31"
+    },
+    {
+      "addr": "2000:1::9",
+      "attachto": "Ethernet436",
+      "mask": "126",
+      "peer_addr": "2000:1::a",
+      "prefixlen": 126,
+      "subnet": "2000:1::8/126"
+    },
+    {
+      "addr": "10.0.0.110",
+      "attachto": "Ethernet440",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.111",
+      "prefixlen": 31,
+      "subnet": "10.0.0.110/31"
+    },
+    {
+      "addr": "fc00::dd",
+      "attachto": "Ethernet440",
+      "mask": "126",
+      "peer_addr": "fc00::de",
+      "prefixlen": 126,
+      "subnet": "fc00::dc/126"
+    },
+    {
+      "addr": "20.1.1.6",
+      "attachto": "Ethernet444",
+      "mask": "255.255.255.254",
+      "peer_addr": "20.1.1.7",
+      "prefixlen": 31,
+      "subnet": "20.1.1.6/31"
+    },
+    {
+      "addr": "2000:1::d",
+      "attachto": "Ethernet444",
+      "mask": "126",
+      "peer_addr": "2000:1::e",
+      "prefixlen": 126,
+      "subnet": "2000:1::c/126"
+    },
+    {
+      "addr": "10.0.0.112",
+      "attachto": "Ethernet448",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.113",
+      "prefixlen": 31,
+      "subnet": "10.0.0.112/31"
+    },
+    {
+      "addr": "fc00::e1",
+      "attachto": "Ethernet448",
+      "mask": "126",
+      "peer_addr": "fc00::e2",
+      "prefixlen": 126,
+      "subnet": "fc00::e0/126"
+    },
+    {
+      "addr": "10.0.0.114",
+      "attachto": "Ethernet456",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.115",
+      "prefixlen": 31,
+      "subnet": "10.0.0.114/31"
+    },
+    {
+      "addr": "fc00::e5",
+      "attachto": "Ethernet456",
+      "mask": "126",
+      "peer_addr": "fc00::e6",
+      "prefixlen": 126,
+      "subnet": "fc00::e4/126"
+    },
+    {
+      "addr": "10.0.0.116",
+      "attachto": "Ethernet464",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.117",
+      "prefixlen": 31,
+      "subnet": "10.0.0.116/31"
+    },
+    {
+      "addr": "fc00::e9",
+      "attachto": "Ethernet464",
+      "mask": "126",
+      "peer_addr": "fc00::ea",
+      "prefixlen": 126,
+      "subnet": "fc00::e8/126"
+    },
+    {
+      "addr": "10.0.0.118",
+      "attachto": "Ethernet472",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.119",
+      "prefixlen": 31,
+      "subnet": "10.0.0.118/31"
+    },
+    {
+      "addr": "fc00::ed",
+      "attachto": "Ethernet472",
+      "mask": "126",
+      "peer_addr": "fc00::ee",
+      "prefixlen": 126,
+      "subnet": "fc00::ec/126"
+    },
+    {
+      "addr": "10.0.0.12",
+      "attachto": "Ethernet48",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.13",
+      "prefixlen": 31,
+      "subnet": "10.0.0.12/31"
+    },
+    {
+      "addr": "fc00::19",
+      "attachto": "Ethernet48",
+      "mask": "126",
+      "peer_addr": "fc00::1a",
+      "prefixlen": 126,
+      "subnet": "fc00::18/126"
+    },
+    {
+      "addr": "10.0.0.120",
+      "attachto": "Ethernet480",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.121",
+      "prefixlen": 31,
+      "subnet": "10.0.0.120/31"
+    },
+    {
+      "addr": "fc00::f1",
+      "attachto": "Ethernet480",
+      "mask": "126",
+      "peer_addr": "fc00::f2",
+      "prefixlen": 126,
+      "subnet": "fc00::f0/126"
+    },
+    {
+      "addr": "10.0.0.122",
+      "attachto": "Ethernet488",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.123",
+      "prefixlen": 31,
+      "subnet": "10.0.0.122/31"
+    },
+    {
+      "addr": "fc00::f5",
+      "attachto": "Ethernet488",
+      "mask": "126",
+      "peer_addr": "fc00::f6",
+      "prefixlen": 126,
+      "subnet": "fc00::f4/126"
+    },
+    {
+      "addr": "10.0.0.124",
+      "attachto": "Ethernet496",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.125",
+      "prefixlen": 31,
+      "subnet": "10.0.0.124/31"
+    },
+    {
+      "addr": "fc00::f9",
+      "attachto": "Ethernet496",
+      "mask": "126",
+      "peer_addr": "fc00::fa",
+      "prefixlen": 126,
+      "subnet": "fc00::f8/126"
+    },
+    {
+      "addr": "10.0.0.126",
+      "attachto": "Ethernet504",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.127",
+      "prefixlen": 31,
+      "subnet": "10.0.0.126/31"
+    },
+    {
+      "addr": "fc00::fd",
+      "attachto": "Ethernet504",
+      "mask": "126",
+      "peer_addr": "fc00::fe",
+      "prefixlen": 126,
+      "subnet": "fc00::fc/126"
+    },
+    {
+      "addr": "10.0.0.14",
+      "attachto": "Ethernet56",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.15",
+      "prefixlen": 31,
+      "subnet": "10.0.0.14/31"
+    },
+    {
+      "addr": "fc00::1d",
+      "attachto": "Ethernet56",
+      "mask": "126",
+      "peer_addr": "fc00::1e",
+      "prefixlen": 126,
+      "subnet": "fc00::1c/126"
+    },
+    {
+      "addr": "10.0.0.16",
+      "attachto": "Ethernet64",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.17",
+      "prefixlen": 31,
+      "subnet": "10.0.0.16/31"
+    },
+    {
+      "addr": "fc00::21",
+      "attachto": "Ethernet64",
+      "mask": "126",
+      "peer_addr": "fc00::22",
+      "prefixlen": 126,
+      "subnet": "fc00::20/126"
+    },
+    {
+      "addr": "10.0.0.18",
+      "attachto": "Ethernet72",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.19",
+      "prefixlen": 31,
+      "subnet": "10.0.0.18/31"
+    },
+    {
+      "addr": "fc00::25",
+      "attachto": "Ethernet72",
+      "mask": "126",
+      "peer_addr": "fc00::26",
+      "prefixlen": 126,
+      "subnet": "fc00::24/126"
+    },
+    {
+      "addr": "10.0.0.2",
+      "attachto": "Ethernet8",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.3",
+      "prefixlen": 31,
+      "subnet": "10.0.0.2/31"
+    },
+    {
+      "addr": "fc00::5",
+      "attachto": "Ethernet8",
+      "mask": "126",
+      "peer_addr": "fc00::6",
+      "prefixlen": 126,
+      "subnet": "fc00::4/126"
+    },
+    {
+      "addr": "10.0.0.20",
+      "attachto": "Ethernet80",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.21",
+      "prefixlen": 31,
+      "subnet": "10.0.0.20/31"
+    },
+    {
+      "addr": "fc00::29",
+      "attachto": "Ethernet80",
+      "mask": "126",
+      "peer_addr": "fc00::2a",
+      "prefixlen": 126,
+      "subnet": "fc00::28/126"
+    },
+    {
+      "addr": "10.0.0.22",
+      "attachto": "Ethernet88",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.23",
+      "prefixlen": 31,
+      "subnet": "10.0.0.22/31"
+    },
+    {
+      "addr": "fc00::2d",
+      "attachto": "Ethernet88",
+      "mask": "126",
+      "peer_addr": "fc00::2e",
+      "prefixlen": 126,
+      "subnet": "fc00::2c/126"
+    },
+    {
+      "addr": "10.0.0.24",
+      "attachto": "Ethernet96",
+      "mask": "255.255.255.254",
+      "peer_addr": "10.0.0.25",
+      "prefixlen": 31,
+      "subnet": "10.0.0.24/31"
+    },
+    {
+      "addr": "fc00::31",
+      "attachto": "Ethernet96",
+      "mask": "126",
+      "peer_addr": "fc00::32",
+      "prefixlen": 126,
+      "subnet": "fc00::30/126"
+    }
+  ],
+  "minigraph_portchannels": {},
+  "minigraph_portchannel_interfaces": [],
+  "minigraph_neighbors": {
+    "Ethernet0": {
+      "name": "ARISTA01T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet104": {
+      "name": "ARISTA14T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet112": {
+      "name": "ARISTA15T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet120": {
+      "name": "ARISTA16T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet128": {
+      "name": "ARISTA01T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet136": {
+      "name": "ARISTA02T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet144": {
+      "name": "ARISTA03T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet152": {
+      "name": "ARISTA04T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet16": {
+      "name": "ARISTA03T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet160": {
+      "name": "ARISTA05T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet168": {
+      "name": "ARISTA06T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet176": {
+      "name": "ARISTA07T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet184": {
+      "name": "ARISTA08T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet192": {
+      "name": "ARISTA09T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet200": {
+      "name": "ARISTA10T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet208": {
+      "name": "ARISTA11T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet216": {
+      "name": "ARISTA12T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet224": {
+      "name": "ARISTA13T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet232": {
+      "name": "ARISTA14T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet24": {
+      "name": "ARISTA04T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet240": {
+      "name": "ARISTA15T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet248": {
+      "name": "ARISTA16T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet256": {
+      "name": "ARISTA17T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet264": {
+      "name": "ARISTA18T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet272": {
+      "name": "ARISTA19T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet280": {
+      "name": "ARISTA20T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet288": {
+      "name": "ARISTA21T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet296": {
+      "name": "ARISTA22T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet304": {
+      "name": "ARISTA23T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet312": {
+      "name": "ARISTA24T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet32": {
+      "name": "ARISTA05T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet320": {
+      "name": "ARISTA25T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet328": {
+      "name": "ARISTA26T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet336": {
+      "name": "ARISTA27T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet344": {
+      "name": "ARISTA28T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet352": {
+      "name": "ARISTA29T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet360": {
+      "name": "ARISTA30T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet368": {
+      "name": "ARISTA31T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet376": {
+      "name": "ARISTA32T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet384": {
+      "name": "ARISTA33T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet392": {
+      "name": "ARISTA34T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet40": {
+      "name": "ARISTA06T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet400": {
+      "name": "ARISTA35T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet408": {
+      "name": "ARISTA36T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet416": {
+      "name": "ARISTA37T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet420": {
+      "name": "ARISTA37T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet424": {
+      "name": "ARISTA38T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet428": {
+      "name": "ARISTA38T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet432": {
+      "name": "ARISTA39T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet436": {
+      "name": "ARISTA39T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet440": {
+      "name": "ARISTA40T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet444": {
+      "name": "ARISTA40T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet448": {
+      "name": "ARISTA41T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet456": {
+      "name": "ARISTA42T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet464": {
+      "name": "ARISTA43T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet472": {
+      "name": "ARISTA44T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet48": {
+      "name": "ARISTA07T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet480": {
+      "name": "ARISTA45T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet488": {
+      "name": "ARISTA46T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet496": {
+      "name": "ARISTA47T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet504": {
+      "name": "ARISTA48T0",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet56": {
+      "name": "ARISTA08T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet64": {
+      "name": "ARISTA09T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet72": {
+      "name": "ARISTA10T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet8": {
+      "name": "ARISTA02T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet80": {
+      "name": "ARISTA11T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet88": {
+      "name": "ARISTA12T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    },
+    "Ethernet96": {
+      "name": "ARISTA13T2",
+      "namespace": "",
+      "port": "Ethernet1"
+    }
+  },
+  "VOQ_INBAND_INTERFACE": {},
+  "BGP_VOQ_CHASSIS_NEIGHBOR": {},
+  "INTERFACE": {
+    "Ethernet0": {
+      "10.0.0.0/31": {},
+      "FC00::1/126": {}
+    },
+    "Ethernet104": {
+      "10.0.0.26/31": {},
+      "FC00::35/126": {}
+    },
+    "Ethernet112": {
+      "10.0.0.28/31": {},
+      "FC00::39/126": {}
+    },
+    "Ethernet120": {
+      "10.0.0.30/31": {},
+      "FC00::3D/126": {}
+    },
+    "Ethernet128": {
+      "10.0.0.32/31": {},
+      "FC00::41/126": {}
+    },
+    "Ethernet136": {
+      "10.0.0.34/31": {},
+      "FC00::45/126": {}
+    },
+    "Ethernet144": {
+      "10.0.0.36/31": {},
+      "FC00::49/126": {}
+    },
+    "Ethernet152": {
+      "10.0.0.38/31": {},
+      "FC00::4D/126": {}
+    },
+    "Ethernet16": {
+      "10.0.0.4/31": {},
+      "FC00::9/126": {}
+    },
+    "Ethernet160": {
+      "10.0.0.40/31": {},
+      "FC00::51/126": {}
+    },
+    "Ethernet168": {
+      "10.0.0.42/31": {},
+      "FC00::55/126": {}
+    },
+    "Ethernet176": {
+      "10.0.0.44/31": {},
+      "FC00::59/126": {}
+    },
+    "Ethernet184": {
+      "10.0.0.46/31": {},
+      "FC00::5D/126": {}
+    },
+    "Ethernet192": {
+      "10.0.0.48/31": {},
+      "FC00::61/126": {}
+    },
+    "Ethernet200": {
+      "10.0.0.50/31": {},
+      "FC00::65/126": {}
+    },
+    "Ethernet208": {
+      "10.0.0.52/31": {},
+      "FC00::69/126": {}
+    },
+    "Ethernet216": {
+      "10.0.0.54/31": {},
+      "FC00::6D/126": {}
+    },
+    "Ethernet224": {
+      "10.0.0.56/31": {},
+      "FC00::71/126": {}
+    },
+    "Ethernet232": {
+      "10.0.0.58/31": {},
+      "FC00::75/126": {}
+    },
+    "Ethernet24": {
+      "10.0.0.6/31": {},
+      "FC00::D/126": {}
+    },
+    "Ethernet240": {
+      "10.0.0.60/31": {},
+      "FC00::79/126": {}
+    },
+    "Ethernet248": {
+      "10.0.0.62/31": {},
+      "FC00::7D/126": {}
+    },
+    "Ethernet256": {
+      "10.0.0.64/31": {},
+      "FC00::81/126": {}
+    },
+    "Ethernet264": {
+      "10.0.0.66/31": {},
+      "FC00::85/126": {}
+    },
+    "Ethernet272": {
+      "10.0.0.68/31": {},
+      "FC00::89/126": {}
+    },
+    "Ethernet280": {
+      "10.0.0.70/31": {},
+      "FC00::8D/126": {}
+    },
+    "Ethernet288": {
+      "10.0.0.72/31": {},
+      "FC00::91/126": {}
+    },
+    "Ethernet296": {
+      "10.0.0.74/31": {},
+      "FC00::95/126": {}
+    },
+    "Ethernet304": {
+      "10.0.0.76/31": {},
+      "FC00::99/126": {}
+    },
+    "Ethernet312": {
+      "10.0.0.78/31": {},
+      "FC00::9D/126": {}
+    },
+    "Ethernet32": {
+      "10.0.0.8/31": {},
+      "FC00::11/126": {}
+    },
+    "Ethernet320": {
+      "10.0.0.80/31": {},
+      "FC00::A1/126": {}
+    },
+    "Ethernet328": {
+      "10.0.0.82/31": {},
+      "FC00::A5/126": {}
+    },
+    "Ethernet336": {
+      "10.0.0.84/31": {},
+      "FC00::A9/126": {}
+    },
+    "Ethernet344": {
+      "10.0.0.86/31": {},
+      "FC00::AD/126": {}
+    },
+    "Ethernet352": {
+      "10.0.0.88/31": {},
+      "FC00::B1/126": {}
+    },
+    "Ethernet360": {
+      "10.0.0.90/31": {},
+      "FC00::B5/126": {}
+    },
+    "Ethernet368": {
+      "10.0.0.92/31": {},
+      "FC00::B9/126": {}
+    },
+    "Ethernet376": {
+      "10.0.0.94/31": {},
+      "FC00::BD/126": {}
+    },
+    "Ethernet384": {
+      "10.0.0.96/31": {},
+      "FC00::C1/126": {}
+    },
+    "Ethernet392": {
+      "10.0.0.98/31": {},
+      "FC00::C5/126": {}
+    },
+    "Ethernet40": {
+      "10.0.0.10/31": {},
+      "FC00::15/126": {}
+    },
+    "Ethernet400": {
+      "10.0.0.100/31": {},
+      "FC00::C9/126": {}
+    },
+    "Ethernet408": {
+      "10.0.0.102/31": {},
+      "FC00::CD/126": {}
+    },
+    "Ethernet416": {
+      "10.0.0.104/31": {},
+      "FC00::D1/126": {}
+    },
+    "Ethernet420": {
+      "20.1.1.0/31": {},
+      "2000:1::1/126": {}
+    },
+    "Ethernet424": {
+      "10.0.0.106/31": {},
+      "FC00::D5/126": {}
+    },
+    "Ethernet428": {
+      "20.1.1.2/31": {},
+      "2000:1::5/126": {}
+    },
+    "Ethernet432": {
+      "10.0.0.108/31": {},
+      "FC00::D9/126": {}
+    },
+    "Ethernet436": {
+      "20.1.1.4/31": {},
+      "2000:1::9/126": {}
+    },
+    "Ethernet440": {
+      "10.0.0.110/31": {},
+      "FC00::DD/126": {}
+    },
+    "Ethernet444": {
+      "20.1.1.6/31": {},
+      "2000:1::d/126": {}
+    },
+    "Ethernet448": {
+      "10.0.0.112/31": {},
+      "FC00::E1/126": {}
+    },
+    "Ethernet456": {
+      "10.0.0.114/31": {},
+      "FC00::E5/126": {}
+    },
+    "Ethernet464": {
+      "10.0.0.116/31": {},
+      "FC00::E9/126": {}
+    },
+    "Ethernet472": {
+      "10.0.0.118/31": {},
+      "FC00::ED/126": {}
+    },
+    "Ethernet48": {
+      "10.0.0.12/31": {},
+      "FC00::19/126": {}
+    },
+    "Ethernet480": {
+      "10.0.0.120/31": {},
+      "FC00::F1/126": {}
+    },
+    "Ethernet488": {
+      "10.0.0.122/31": {},
+      "FC00::F5/126": {}
+    },
+    "Ethernet496": {
+      "10.0.0.124/31": {},
+      "FC00::F9/126": {}
+    },
+    "Ethernet504": {
+      "10.0.0.126/31": {},
+      "FC00::FD/126": {}
+    },
+    "Ethernet512": {
+      "10.0.0.128/31": {}
+    },
+    "Ethernet513": {
+      "10.0.0.130/31": {}
+    },
+    "Ethernet56": {
+      "10.0.0.14/31": {},
+      "FC00::1D/126": {}
+    },
+    "Ethernet64": {
+      "10.0.0.16/31": {},
+      "FC00::21/126": {}
+    },
+    "Ethernet72": {
+      "10.0.0.18/31": {},
+      "FC00::25/126": {}
+    },
+    "Ethernet8": {
+      "10.0.0.2/31": {},
+      "FC00::5/126": {}
+    },
+    "Ethernet80": {
+      "10.0.0.20/31": {},
+      "FC00::29/126": {}
+    },
+    "Ethernet88": {
+      "10.0.0.22/31": {},
+      "FC00::2D/126": {}
+    },
+    "Ethernet96": {
+      "10.0.0.24/31": {},
+      "FC00::31/126": {}
+    }
+  },
+  "switch_type": "",
+  "type": "LeafRouter",
+  "switch": {
+    "ACL_ACTION|PACKET_ACTION": "COPY,DROP,FORWARD",
+    "ASIC_SDK_HEALTH_EVENT": "false",
+    "ECMP_HASH_ALGORITHM": "CRC,XOR,CRC_32LO,CRC_32HI,CRC_CCITT,CRC_XOR",
+    "ECMP_HASH_ALGORITHM_CAPABLE": "true",
+    "ECMP_HASH_CAPABLE": "false",
+    "HASH|NATIVE_HASH_FIELD_LIST": "SRC_IP,DST_IP,VLAN_ID,IP_PROTOCOL,ETHERTYPE,L4_SRC_PORT,L4_DST_PORT,SRC_MAC,DST_MAC,IN_PORT,IPV6_FLOW_LABEL",
+    "ICMP_OFFLOAD_CAPABLE": "false",
+    "LAG_HASH_ALGORITHM": "CRC,XOR,CRC_32LO,CRC_32HI,CRC_CCITT,CRC_XOR",
+    "LAG_HASH_ALGORITHM_CAPABLE": "true",
+    "LAG_HASH_CAPABLE": "false",
+    "LAG_TPID_CAPABLE": "false",
+    "MAX_NEXTHOP_GROUP_COUNT": "4095",
+    "MIRROR": "true",
+    "MIRRORV6": "true",
+    "ORDERED_ECMP_CAPABLE": "true",
+    "PATH_TRACING_CAPABLE": "false",
+    "PFC_DLR_INIT_CAPABLE": "true",
+    "PORT_EGRESS_SAMPLE_CAPABLE": "false",
+    "PORT_TPID_CAPABLE": "true",
+    "REG_FATAL_ASIC_SDK_HEALTH_CATEGORY": "false",
+    "REG_NOTICE_ASIC_SDK_HEALTH_CATEGORY": "false",
+    "REG_WARNING_ASIC_SDK_HEALTH_CATEGORY": "false",
+    "SWITCH_TRIMMING_CAPABLE": "false",
+    "SWITCH|NUMBER_OF_TRAFFIC_CLASSES": "8",
+    "SWITCH|NUMBER_OF_UNICAST_QUEUES": "8",
+    "SWITCH|PACKET_TRIMMING_DSCP_RESOLUTION_MODE": "N/A",
+    "SWITCH|PACKET_TRIMMING_QUEUE_RESOLUTION_MODE": "N/A"
+  },
+  "macsec_en": false
+}
+13/11/2025 12:52:20 __init__._log_sep_line                   L0170 INFO   | ==================== snappi_tests/pfc/test_m2o_oversubscribe_lossy.py::test_m2o_oversubscribe_lossy[10.0-single_linecard_single_asic] setup  ====================
+13/11/2025 12:52:20 __init__.set_default                     L0053 INFO   | Completeness level not set during test execution. Setting to default level: CompletenessLevel.basic
+13/11/2025 12:52:20 __init__.check_test_completeness         L0151 INFO   | Test has no defined levels. Continue without test completeness checks
+13/11/2025 12:52:20 conftest.enhance_inventory               L0345 INFO   | Inventory file: ['../ansible/snappi-sonic']
+13/11/2025 12:52:24 ptfhost_utils.run_icmp_responder_session L0326 INFO   | Skip running icmp_responder at session level, it is only for dualtor testbed with active-active mux ports.
+13/11/2025 12:52:24 __init__._sanity_check                   L0442 INFO   | Skip sanity check according to command line argument
+13/11/2025 12:52:24 conftest.collect_before_test             L2741 INFO   | Dumping Disk and Memory Space information before test on crdc-garnet-sonic-ud
+13/11/2025 12:52:25 conftest.collect_before_test             L2745 INFO   | Collecting core dumps before test on crdc-garnet-sonic-ud
+13/11/2025 12:52:26 conftest.collect_before_test             L2754 INFO   | Collecting running config before test on crdc-garnet-sonic-ud
+13/11/2025 12:52:29 conftest.restore_golden_config_db        L3416 INFO   | [restore_golden_config_db] Restored /etc/sonic/golden_config_db.json
+13/11/2025 12:52:29 conftest.temporarily_disable_route_check L3034 INFO   | Skipping temporarily_disable_route_check fixture
+13/11/2025 12:52:29 conftest.run_yang_validation             L3665 INFO   | Running YANG validation on crdc-garnet-sonic-ud (pre-test)
+13/11/2025 12:52:34 conftest.run_yang_validation             L3681 INFO   | YANG validation passed on crdc-garnet-sonic-ud (pre-test)
+13/11/2025 12:52:34 conftest.generate_params_dut_hostname    L1544 INFO   | Using DUTs ['crdc-garnet-sonic-ud'] in testbed 'vms-snappi-sonic'
+13/11/2025 12:52:34 conftest.set_rand_one_dut_hostname       L0658 INFO   | Randomly select dut crdc-garnet-sonic-ud for testing
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0081 INFO   | -------------------- fixture enable_packet_aging_after_test setup starts --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0085 INFO   | -------------------- fixture enable_packet_aging_after_test setup ends --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0081 INFO   | -------------------- fixture rand_lossless_prio setup starts --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0085 INFO   | -------------------- fixture rand_lossless_prio setup ends --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0081 INFO   | -------------------- fixture rand_lossy_prio setup starts --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0085 INFO   | -------------------- fixture rand_lossy_prio setup ends --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0081 INFO   | -------------------- fixture start_pfcwd_after_test setup starts --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0085 INFO   | -------------------- fixture start_pfcwd_after_test setup ends --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0081 INFO   | -------------------- fixture disable_voq_watchdog setup starts --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0085 INFO   | -------------------- fixture disable_voq_watchdog setup ends --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0081 INFO   | -------------------- fixture number_of_tx_rx_ports setup starts --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0085 INFO   | -------------------- fixture number_of_tx_rx_ports setup ends --------------------
+13/11/2025 12:52:34 __init__._fixture_func_decorator         L0069 INFO   | -------------------- fixture snappi_api_serv_ip setup starts --------------------
+13/11/2025 12:52:34 __init__._fixture_func_decorator         L0076 INFO   | -------------------- fixture snappi_api_serv_ip setup ends --------------------
+13/11/2025 12:52:34 __init__._fixture_func_decorator         L0069 INFO   | -------------------- fixture snappi_api_serv_port setup starts --------------------
+13/11/2025 12:52:34 __init__._fixture_func_decorator         L0076 INFO   | -------------------- fixture snappi_api_serv_port setup ends --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0081 INFO   | -------------------- fixture snappi_api setup starts --------------------
+13/11/2025 12:52:34 __init__._fixture_generator_decorator    L0085 INFO   | -------------------- fixture snappi_api setup ends --------------------
+13/11/2025 12:52:35 conftest.rand_one_dut_front_end_hostname L0694 INFO   | Randomly select dut crdc-garnet-sonic-ud for testing
+13/11/2025 12:52:35 __init__._fixture_func_decorator         L0069 INFO   | -------------------- fixture prio_dscp_map setup starts --------------------
+13/11/2025 12:52:36 __init__._fixture_func_decorator         L0076 INFO   | -------------------- fixture prio_dscp_map setup ends --------------------
+13/11/2025 12:52:36 __init__._fixture_func_decorator         L0069 INFO   | -------------------- fixture lossless_prio_list setup starts --------------------
+13/11/2025 12:52:37 __init__._fixture_func_decorator         L0076 INFO   | -------------------- fixture lossless_prio_list setup ends --------------------
+13/11/2025 12:52:37 __init__._fixture_func_decorator         L0069 INFO   | -------------------- fixture get_snappi_ports setup starts --------------------
+13/11/2025 12:52:37 conftest.generate_port_lists             L1636 INFO   | Generate dut_port_map: {'crdc-garnet-sonic-ud': ['crdc-garnet-sonic-ud|Ethernet420', 'crdc-garnet-sonic-ud|Ethernet428', 'crdc-garnet-sonic-ud|Ethernet436', 'crdc-garnet-sonic-ud|Ethernet444']}
+13/11/2025 12:52:37 conftest.generate_port_lists             L1659 INFO   | Generate port_list: ['crdc-garnet-sonic-ud|Ethernet420', 'crdc-garnet-sonic-ud|Ethernet428', 'crdc-garnet-sonic-ud|Ethernet436', 'crdc-garnet-sonic-ud|Ethernet444']
+13/11/2025 12:52:37 __init__._fixture_func_decorator         L0069 INFO   | -------------------- fixture get_snappi_ports_single_dut setup starts --------------------
+13/11/2025 12:52:37 __init__._fixture_func_decorator         L0076 INFO   | -------------------- fixture get_snappi_ports_single_dut setup ends --------------------
+13/11/2025 12:52:37 __init__._fixture_func_decorator         L0076 INFO   | -------------------- fixture get_snappi_ports setup ends --------------------
+13/11/2025 12:52:37 __init__._fixture_func_decorator         L0069 INFO   | -------------------- fixture snappi_port_selection setup starts --------------------
+13/11/2025 12:52:37 __init__._fixture_func_decorator         L0076 INFO   | -------------------- fixture snappi_port_selection setup ends --------------------
+13/11/2025 12:52:37 __init__.loganalyzer                     L0077 INFO   | Log analyzer is disabled
+13/11/2025 12:52:37 __init__.memory_utilization              L0143 INFO   | Hostname: crdc-garnet-sonic-ud, Hwsku: Juniper-QFX5241-64-OD, Platform: x86_64-juniper_qfx5241-r0
+13/11/2025 12:52:37 memory_utilization.parse_and_register_co L0365 INFO   | Loading memory monitoring commands for hwsku: Juniper-QFX5241-64-OD
+13/11/2025 12:52:37 memory_utilization.register_command      L0023 INFO   | Registering command: name=monit, cmd=sudo monit validate, memory_params={'memory_usage': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 10}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 70}}}, memory_check=<function parse_monit_validate_output at 0x7c37cf224940>
+13/11/2025 12:52:37 memory_utilization.register_command      L0023 INFO   | Registering command: name=top, cmd=top -b -n 1, memory_params={'bgpd': {'memory_increase_threshold': {'type': 'value', 'value': 128}, 'memory_high_threshold': None}, 'zebra': {'memory_increase_threshold': {'type': 'value', 'value': 128}, 'memory_high_threshold': None}}, memory_check=<function parse_top_output at 0x7c37cf224160>
+13/11/2025 12:52:37 memory_utilization.register_command      L0023 INFO   | Registering command: name=free, cmd=free -m, memory_params={'used': {'memory_increase_threshold': {'type': 'percentage', 'value': '20%'}, 'memory_high_threshold': None}}, memory_check=<function parse_free_output at 0x7c37cf2248b0>
+13/11/2025 12:52:37 memory_utilization.register_command      L0023 INFO   | Registering command: name=docker, cmd=docker stats --no-stream, memory_params={'snmp': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 4}}, 'pmon': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 8}}, 'lldp': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 4}}, 'gnmi': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 6}}, 'radv': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 3}}, 'syncd': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 5}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 18}}, 'bgp': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 4}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 14}}, 'teamd': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 5}}, 'swss': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 3}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 8}}, 'database': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 6}}}, memory_check=<function parse_docker_stats_output at 0x7c37cf2249d0>
+13/11/2025 12:52:37 memory_utilization.register_command      L0023 INFO   | Registering command: name=frr_bgp, cmd=vtysh -c "show memory bgp", memory_params={'used': {'memory_increase_threshold': [{'type': 'percentage', 'value': '50%'}, {'type': 'value', 'value': 64}, {'type': 'comparison', 'value': 'max'}], 'memory_high_threshold': {'type': 'value', 'value': 256}}}, memory_check=<function parse_frr_memory_output at 0x7c37cf224a60>
+13/11/2025 12:52:37 memory_utilization.register_command      L0023 INFO   | Registering command: name=frr_zebra, cmd=vtysh -c "show memory zebra", memory_params={'used': {'memory_increase_threshold': [{'type': 'percentage', 'value': '50%'}, {'type': 'value', 'value': 64}, {'type': 'comparison', 'value': 'max'}], 'memory_high_threshold': {'type': 'value', 'value': 128}}}, memory_check=<function parse_frr_memory_output at 0x7c37cf224a60>
+13/11/2025 12:52:37 __init__._fixture_generator_decorator    L0081 INFO   | -------------------- fixture disable_pfcwd setup starts --------------------
+13/11/2025 12:52:39 __init__._fixture_generator_decorator    L0085 INFO   | -------------------- fixture disable_pfcwd setup ends --------------------
+13/11/2025 12:52:39 __init__._fixture_func_decorator         L0069 INFO   | -------------------- fixture tgen_port_info setup starts --------------------
+13/11/2025 12:52:39 __init__._fixture_func_decorator         L0076 INFO   | -------------------- fixture tgen_port_info setup ends --------------------
+13/11/2025 12:52:39 __init__._log_sep_line                   L0170 INFO   | ==================== snappi_tests/pfc/test_m2o_oversubscribe_lossy.py::test_m2o_oversubscribe_lossy[10.0-single_linecard_single_asic] teardown ====================
+13/11/2025 12:52:39 __init__._fixture_generator_decorator    L0093 INFO   | -------------------- fixture disable_pfcwd teardown starts --------------------
+13/11/2025 12:52:41 __init__._fixture_generator_decorator    L0102 INFO   | -------------------- fixture disable_pfcwd teardown ends --------------------
+13/11/2025 12:52:41 __init__._log_sep_line                   L0170 INFO   | ==================== snappi_tests/pfc/test_m2o_oversubscribe_lossy.py::test_m2o_oversubscribe_lossy[800.0-single_linecard_single_asic] setup  ====================
+13/11/2025 12:52:41 __init__.set_default                     L0053 INFO   | Completeness level not set during test execution. Setting to default level: CompletenessLevel.basic
+13/11/2025 12:52:41 __init__.check_test_completeness         L0151 INFO   | Test has no defined levels. Continue without test completeness checks
+13/11/2025 12:52:41 __init__.loganalyzer                     L0077 INFO   | Log analyzer is disabled
+13/11/2025 12:52:41 __init__.memory_utilization              L0143 INFO   | Hostname: crdc-garnet-sonic-ud, Hwsku: Juniper-QFX5241-64-OD, Platform: x86_64-juniper_qfx5241-r0
+13/11/2025 12:52:41 memory_utilization.parse_and_register_co L0365 INFO   | Loading memory monitoring commands for hwsku: Juniper-QFX5241-64-OD
+13/11/2025 12:52:41 memory_utilization.register_command      L0023 INFO   | Registering command: name=monit, cmd=sudo monit validate, memory_params={'memory_usage': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 10}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 70}}}, memory_check=<function parse_monit_validate_output at 0x7c37cf224940>
+13/11/2025 12:52:41 memory_utilization.register_command      L0023 INFO   | Registering command: name=top, cmd=top -b -n 1, memory_params={'bgpd': {'memory_increase_threshold': {'type': 'value', 'value': 128}, 'memory_high_threshold': None}, 'zebra': {'memory_increase_threshold': {'type': 'value', 'value': 128}, 'memory_high_threshold': None}}, memory_check=<function parse_top_output at 0x7c37cf224160>
+13/11/2025 12:52:41 memory_utilization.register_command      L0023 INFO   | Registering command: name=free, cmd=free -m, memory_params={'used': {'memory_increase_threshold': {'type': 'percentage', 'value': '20%'}, 'memory_high_threshold': None}}, memory_check=<function parse_free_output at 0x7c37cf2248b0>
+13/11/2025 12:52:41 memory_utilization.register_command      L0023 INFO   | Registering command: name=docker, cmd=docker stats --no-stream, memory_params={'snmp': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 4}}, 'pmon': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 8}}, 'lldp': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 4}}, 'gnmi': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 6}}, 'radv': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 3}}, 'syncd': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 5}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 18}}, 'bgp': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 4}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 14}}, 'teamd': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 5}}, 'swss': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 3}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 8}}, 'database': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 6}}}, memory_check=<function parse_docker_stats_output at 0x7c37cf2249d0>
+13/11/2025 12:52:41 memory_utilization.register_command      L0023 INFO   | Registering command: name=frr_bgp, cmd=vtysh -c "show memory bgp", memory_params={'used': {'memory_increase_threshold': [{'type': 'percentage', 'value': '50%'}, {'type': 'value', 'value': 64}, {'type': 'comparison', 'value': 'max'}], 'memory_high_threshold': {'type': 'value', 'value': 256}}}, memory_check=<function parse_frr_memory_output at 0x7c37cf224a60>
+13/11/2025 12:52:41 memory_utilization.register_command      L0023 INFO   | Registering command: name=frr_zebra, cmd=vtysh -c "show memory zebra", memory_params={'used': {'memory_increase_threshold': [{'type': 'percentage', 'value': '50%'}, {'type': 'value', 'value': 64}, {'type': 'comparison', 'value': 'max'}], 'memory_high_threshold': {'type': 'value', 'value': 128}}}, memory_check=<function parse_frr_memory_output at 0x7c37cf224a60>
+13/11/2025 12:52:41 __init__._fixture_generator_decorator    L0081 INFO   | -------------------- fixture disable_pfcwd setup starts --------------------
+13/11/2025 12:52:43 __init__._fixture_generator_decorator    L0085 INFO   | -------------------- fixture disable_pfcwd setup ends --------------------
+13/11/2025 12:52:43 __init__._fixture_func_decorator         L0069 INFO   | -------------------- fixture tgen_port_info setup starts --------------------
+13/11/2025 12:52:43 __init__._fixture_func_decorator         L0076 INFO   | -------------------- fixture tgen_port_info setup ends --------------------
+13/11/2025 12:52:43 __init__._log_sep_line                   L0170 INFO   | ==================== snappi_tests/pfc/test_m2o_oversubscribe_lossy.py::test_m2o_oversubscribe_lossy[800.0-single_linecard_single_asic] teardown ====================
+13/11/2025 12:52:43 __init__._fixture_generator_decorator    L0093 INFO   | -------------------- fixture disable_pfcwd teardown starts --------------------
+13/11/2025 12:52:45 __init__._fixture_generator_decorator    L0102 INFO   | -------------------- fixture disable_pfcwd teardown ends --------------------
+13/11/2025 12:52:45 __init__._log_sep_line                   L0170 INFO   | ==================== snappi_tests/pfc/test_m2o_oversubscribe_lossy.py::test_m2o_oversubscribe_lossy[400.0-single_linecard_single_asic] setup  ====================
+13/11/2025 12:52:45 __init__.set_default                     L0053 INFO   | Completeness level not set during test execution. Setting to default level: CompletenessLevel.basic
+13/11/2025 12:52:45 __init__.check_test_completeness         L0151 INFO   | Test has no defined levels. Continue without test completeness checks
+13/11/2025 12:52:45 __init__.loganalyzer                     L0077 INFO   | Log analyzer is disabled
+13/11/2025 12:52:45 __init__.memory_utilization              L0143 INFO   | Hostname: crdc-garnet-sonic-ud, Hwsku: Juniper-QFX5241-64-OD, Platform: x86_64-juniper_qfx5241-r0
+13/11/2025 12:52:45 memory_utilization.parse_and_register_co L0365 INFO   | Loading memory monitoring commands for hwsku: Juniper-QFX5241-64-OD
+13/11/2025 12:52:45 memory_utilization.register_command      L0023 INFO   | Registering command: name=monit, cmd=sudo monit validate, memory_params={'memory_usage': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 10}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 70}}}, memory_check=<function parse_monit_validate_output at 0x7c37cf224940>
+13/11/2025 12:52:45 memory_utilization.register_command      L0023 INFO   | Registering command: name=top, cmd=top -b -n 1, memory_params={'bgpd': {'memory_increase_threshold': {'type': 'value', 'value': 128}, 'memory_high_threshold': None}, 'zebra': {'memory_increase_threshold': {'type': 'value', 'value': 128}, 'memory_high_threshold': None}}, memory_check=<function parse_top_output at 0x7c37cf224160>
+13/11/2025 12:52:45 memory_utilization.register_command      L0023 INFO   | Registering command: name=free, cmd=free -m, memory_params={'used': {'memory_increase_threshold': {'type': 'percentage', 'value': '20%'}, 'memory_high_threshold': None}}, memory_check=<function parse_free_output at 0x7c37cf2248b0>
+13/11/2025 12:52:45 memory_utilization.register_command      L0023 INFO   | Registering command: name=docker, cmd=docker stats --no-stream, memory_params={'snmp': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 4}}, 'pmon': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 8}}, 'lldp': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 4}}, 'gnmi': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 6}}, 'radv': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 3}}, 'syncd': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 5}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 18}}, 'bgp': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 4}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 14}}, 'teamd': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 5}}, 'swss': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 3}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 8}}, 'database': {'memory_increase_threshold': {'type': 'percentage_points', 'value': 2}, 'memory_high_threshold': {'type': 'percentage_points', 'value': 6}}}, memory_check=<function parse_docker_stats_output at 0x7c37cf2249d0>
+13/11/2025 12:52:45 memory_utilization.register_command      L0023 INFO   | Registering command: name=frr_bgp, cmd=vtysh -c "show memory bgp", memory_params={'used': {'memory_increase_threshold': [{'type': 'percentage', 'value': '50%'}, {'type': 'value', 'value': 64}, {'type': 'comparison', 'value': 'max'}], 'memory_high_threshold': {'type': 'value', 'value': 256}}}, memory_check=<function parse_frr_memory_output at 0x7c37cf224a60>
+13/11/2025 12:52:45 memory_utilization.register_command      L0023 INFO   | Registering command: name=frr_zebra, cmd=vtysh -c "show memory zebra", memory_params={'used': {'memory_increase_threshold': [{'type': 'percentage', 'value': '50%'}, {'type': 'value', 'value': 64}, {'type': 'comparison', 'value': 'max'}], 'memory_high_threshold': {'type': 'value', 'value': 128}}}, memory_check=<function parse_frr_memory_output at 0x7c37cf224a60>
+13/11/2025 12:52:45 __init__._fixture_generator_decorator    L0081 INFO   | -------------------- fixture disable_pfcwd setup starts --------------------
+13/11/2025 12:52:46 __init__._fixture_generator_decorator    L0085 INFO   | -------------------- fixture disable_pfcwd setup ends --------------------
+13/11/2025 12:52:46 __init__._fixture_func_decorator         L0069 INFO   | -------------------- fixture tgen_port_info setup starts --------------------
+13/11/2025 12:52:51 __init__._fixture_func_decorator         L0076 INFO   | -------------------- fixture tgen_port_info setup ends --------------------
+13/11/2025 12:52:51 conftest.setup_dualtor_mux_ports         L3494 INFO   | skip setup dualtor mux cables on non-dualtor testbed
+13/11/2025 12:52:57 memory_utilization.parse_frr_memory_outp L0631 INFO   | Total FRR memory used: 105.9 MB, holding: 99614720.0 bytes, small: 0.0 bytes, ordinary: 11390976.0 bytes
+13/11/2025 12:52:57 memory_utilization.parse_frr_memory_outp L0631 INFO   | Total FRR memory used: 40.7 MB, holding: 34603008.0 bytes, small: 0.0 bytes, ordinary: 8104960.0 bytes
+13/11/2025 12:52:57 __init__.pytest_runtest_setup            L0064 INFO   | Before test: collected memory_values {'before_test': {'crdc-garnet-sonic-ud': {'monit': {'memory_usage': 13.8}, 'top': {'zebra': 39.1, 'bgpd': 119.1}, 'free': {'used': 4358}, 'docker': {'snmp': 0.3, 'pmon': 0.7, 'lldp': 0.2, 'gnmi': 0.5, 'bgp': 0.8, 'radv': 0.1, 'syncd': 4.3, 'teamd': 0.1, 'swss': 0.4, 'database': 0.3}, 'frr_bgp': {'used': 105.9}, 'frr_zebra': {'used': 40.7}}}, 'after_test': {'crdc-garnet-sonic-ud': {}}}
+13/11/2025 12:52:57 __init__._log_sep_line                   L0170 INFO   | ==================== snappi_tests/pfc/test_m2o_oversubscribe_lossy.py::test_m2o_oversubscribe_lossy[400.0-single_linecard_single_asic] call ====================
+13/11/2025 12:52:57 test_m2o_oversubscribe_lossy.test_m2o_ov L0067 INFO   | Selected random test lossy flow priorities:[5, 2]
+13/11/2025 12:52:58 connection._warn                         L0332 WARNING| Verification of certificates is disabled
+13/11/2025 12:52:58 connection._info                         L0329 INFO   | Determining the platform and rest_port using the 10.204.101.155 address...
+13/11/2025 12:52:58 connection._warn                         L0332 WARNING| Unable to connect to http://10.204.101.155:8001.
+13/11/2025 12:52:58 connection._info                         L0329 INFO   | Connection established to `https://10.204.101.155:8001 on linux`
+13/11/2025 12:53:09 connection._info                         L0329 INFO   | Using IxNetwork api server version 10.80.2412.18
+13/11/2025 12:53:09 connection._info                         L0329 INFO   | User info IxNetwork/apiserver/admin-53-830562
+13/11/2025 12:53:09 snappi_api.info                          L1419 INFO   | snappi-1.27.1
+13/11/2025 12:53:09 snappi_api.info                          L1419 INFO   | snappi_ixnetwork-1.27.2
+13/11/2025 12:53:09 snappi_api.info                          L1419 INFO   | ixnetwork_restpy-1.6.1
+13/11/2025 12:53:10 snappi_api.info                          L1419 INFO   | Config validation 0.013s
+13/11/2025 12:53:12 snappi_api.info                          L1419 INFO   | Ports configuration 1.559s
+13/11/2025 12:53:12 snappi_api.info                          L1419 INFO   | Captures configuration 0.255s
+13/11/2025 12:53:15 snappi_api.info                          L1419 INFO   | Add location hosts [10.207.65.42] 2.341s
+13/11/2025 12:53:18 snappi_api.info                          L1419 INFO   | Location hosts ready [10.207.65.42] 2.221s
+13/11/2025 12:53:18 snappi_api.info                          L1419 INFO   | Speed conversion is not require for (port.name, speed) : [('Port 0', 'starTwoByFourHundredGigNonFannedOutPAM4'), ('Port 1', 'starTwoByFourHundredGigNonFannedOutPAM4'), ('Port 2', 'starTwoByFourHundredGigNonFannedOutPAM4')]
+13/11/2025 12:53:18 snappi_api.info                          L1419 INFO   | Aggregation mode speed change 0.628s
+13/11/2025 12:53:19 snappi_api.info                          L1419 INFO   | Location preemption [10.207.65.42;1;1, 10.207.65.42;1;2, 10.207.65.42;1;3] 0.149s
+13/11/2025 12:53:36 snappi_api.info                          L1419 INFO   | Location connect [Port 0, Port 1, Port 2] 16.619s
+13/11/2025 12:53:36 snappi_api.info                          L1419 INFO   | Location state check [Port 0, Port 1, Port 2] 0.344s
+13/11/2025 12:53:36 snappi_api.info                          L1419 INFO   | Location configuration 23.679s
+13/11/2025 12:53:49 snappi_api.info                          L1419 INFO   | Layer1 configuration 12.531s
+13/11/2025 12:53:49 snappi_api.info                          L1419 INFO   | Lag Configuration 0.116s
+13/11/2025 12:53:49 snappi_api.info                          L1419 INFO   | Convert device config : 0.278s
+13/11/2025 12:53:49 snappi_api.info                          L1419 INFO   | Create IxNetwork device config : 0.001s
+13/11/2025 12:53:50 snappi_api.info                          L1419 INFO   | Push IxNetwork device config : 0.705s
+13/11/2025 12:53:50 snappi_api.info                          L1419 INFO   | Devices configuration 1.077s
+13/11/2025 12:53:56 snappi_api.info                          L1419 INFO   | Flows configuration 5.738s
+13/11/2025 12:54:02 snappi_api.info                          L1419 INFO   | Start interfaces 6.081s
+13/11/2025 12:54:02 snappi_api.info                          L1419 INFO   | IxNet - The Traffic Item was modified. Please perform a Traffic Generate to update the associated traffic Flow Groups
+13/11/2025 12:54:02 traffic_generation.run_traffic           L0616 INFO   | Wait for Arp to Resolve ...
+13/11/2025 12:54:15 traffic_generation.run_traffic           L0639 INFO   | Starting transmit on all flows ...
+13/11/2025 12:54:19 snappi_api.info                          L1419 INFO   | Flows generate/apply 3.198s
+13/11/2025 12:54:31 snappi_api.info                          L1419 INFO   | Flows clear statistics 12.062s
+13/11/2025 12:54:31 snappi_api.info                          L1419 INFO   | Captures start 0.000s
+13/11/2025 12:54:35 snappi_api.info                          L1419 INFO   | Flows start 3.926s
+13/11/2025 12:54:35 traffic_generation.run_traffic           L0655 INFO   | Polling DUT for traffic statistics for 15 seconds ...
+13/11/2025 12:54:41 traffic_generation.run_traffic           L0674 INFO   | Polling TGEN for in-flight traffic statistics...
+13/11/2025 12:54:44 traffic_generation.run_traffic           L0679 INFO   | In-flight traffic statistics for flows: ['Test Flow 1 -> 0', 'Test Flow 2 -> 0', 'Background Flow 1 -> 0', 'Background Flow 2 -> 0']
+13/11/2025 12:54:44 traffic_generation.run_traffic           L0680 INFO   | In-flight TX frames: [113087699, 113087699, 94239749, 94239750]
+13/11/2025 12:54:44 traffic_generation.run_traffic           L0681 INFO   | In-flight RX frames: [94240150, 94240150, 94239706, 94239706]
+13/11/2025 12:54:48 traffic_generation.run_traffic           L0682 INFO   | DUT polling complete
+13/11/2025 12:54:48 traffic_generation.run_traffic           L0693 INFO   | Checking if all flows have stopped. Attempt #1
+13/11/2025 12:54:49 traffic_generation.run_traffic           L0700 INFO   | All test and background traffic flows stopped
+13/11/2025 12:54:51 traffic_generation.run_traffic           L0723 INFO   | Dumping per-flow statistics
+13/11/2025 12:54:53 traffic_generation.run_traffic           L0725 INFO   | Stopping transmit on all remaining flows
+13/11/2025 12:54:57 __init__._log_sep_line                   L0170 INFO   | ==================== snappi_tests/pfc/test_m2o_oversubscribe_lossy.py::test_m2o_oversubscribe_lossy[400.0-single_linecard_single_asic] teardown ====================
+13/11/2025 12:55:03 memory_utilization.parse_frr_memory_outp L0631 INFO   | Total FRR memory used: 105.9 MB, holding: 99614720.0 bytes, small: 0.0 bytes, ordinary: 11390976.0 bytes
+13/11/2025 12:55:03 memory_utilization.parse_frr_memory_outp L0631 INFO   | Total FRR memory used: 40.7 MB, holding: 34603008.0 bytes, small: 0.0 bytes, ordinary: 8105984.0 bytes
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: monit-memory_usage
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for monit:memory_usage: 70.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for monit:memory_usage: 10.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: top-bgpd
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for top:bgpd: 128.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: top-zebra
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for top:zebra: 128.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: free-used
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for free:used: 871.6
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: docker-snmp
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for docker:snmp: 4.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for docker:snmp: 2.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: docker-pmon
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for docker:pmon: 8.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for docker:pmon: 2.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: docker-lldp
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for docker:lldp: 4.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for docker:lldp: 2.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: docker-gnmi
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for docker:gnmi: 6.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for docker:gnmi: 2.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: docker-radv
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for docker:radv: 3.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for docker:radv: 2.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: docker-syncd
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for docker:syncd: 18.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for docker:syncd: 5.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: docker-bgp
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for docker:bgp: 14.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for docker:bgp: 4.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: docker-teamd
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for docker:teamd: 5.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for docker:teamd: 2.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: docker-swss
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for docker:swss: 8.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for docker:swss: 3.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: docker-database
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for docker:database: 6.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for docker:database: 2.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: frr_bgp-used
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for frr_bgp:used: 256.0
+13/11/2025 12:55:03 memory_utilization._parse_threshold      L0216 INFO   | Selected max threshold from list: 64.0 (from values: [53.0, 64.0])
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for frr_bgp:used: 64.0
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0053 INFO   | Checking thresholds for command: frr_zebra-used
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0075 INFO   | Calculated high threshold for frr_zebra:used: 128.0
+13/11/2025 12:55:03 memory_utilization._parse_threshold      L0216 INFO   | Selected max threshold from list: 64.0 (from values: [20.4, 64.0])
+13/11/2025 12:55:03 memory_utilization.check_memory_threshol L0093 INFO   | Calculated increase threshold for frr_zebra:used: 64.0
+13/11/2025 12:55:03 __init__.pytest_runtest_teardown         L0124 INFO   | After test: collected memory_values {'before_test': {'crdc-garnet-sonic-ud': {'monit': {'memory_usage': 13.8}, 'top': {'zebra': 39.1, 'bgpd': 119.1}, 'free': {'used': 4358}, 'docker': {'snmp': 0.3, 'pmon': 0.7, 'lldp': 0.2, 'gnmi': 0.5, 'bgp': 0.8, 'radv': 0.1, 'syncd': 4.3, 'teamd': 0.1, 'swss': 0.4, 'database': 0.3}, 'frr_bgp': {'used': 105.9}, 'frr_zebra': {'used': 40.7}}}, 'after_test': {'crdc-garnet-sonic-ud': {'monit': {'memory_usage': 13.8}, 'top': {'zebra': 39.1, 'bgpd': 119.1}, 'free': {'used': 4357}, 'docker': {'snmp': 0.3, 'pmon': 0.7, 'lldp': 0.2, 'gnmi': 0.5, 'bgp': 0.8, 'radv': 0.1, 'syncd': 4.3, 'teamd': 0.1, 'swss': 0.4, 'database': 0.3}, 'frr_bgp': {'used': 105.9}, 'frr_zebra': {'used': 40.7}}}}
+13/11/2025 12:55:03 __init__._fixture_generator_decorator    L0093 INFO   | -------------------- fixture disable_pfcwd teardown starts --------------------
+13/11/2025 12:55:05 __init__._fixture_generator_decorator    L0102 INFO   | -------------------- fixture disable_pfcwd teardown ends --------------------
+13/11/2025 12:55:05 __init__._fixture_generator_decorator    L0093 INFO   | -------------------- fixture snappi_api teardown starts --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0102 INFO   | -------------------- fixture snappi_api teardown ends --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0093 INFO   | -------------------- fixture number_of_tx_rx_ports teardown starts --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0102 INFO   | -------------------- fixture number_of_tx_rx_ports teardown ends --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0093 INFO   | -------------------- fixture disable_voq_watchdog teardown starts --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0102 INFO   | -------------------- fixture disable_voq_watchdog teardown ends --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0093 INFO   | -------------------- fixture start_pfcwd_after_test teardown starts --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0102 INFO   | -------------------- fixture start_pfcwd_after_test teardown ends --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0093 INFO   | -------------------- fixture rand_lossy_prio teardown starts --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0102 INFO   | -------------------- fixture rand_lossy_prio teardown ends --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0093 INFO   | -------------------- fixture rand_lossless_prio teardown starts --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0102 INFO   | -------------------- fixture rand_lossless_prio teardown ends --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0093 INFO   | -------------------- fixture enable_packet_aging_after_test teardown starts --------------------
+13/11/2025 12:55:13 __init__._fixture_generator_decorator    L0102 INFO   | -------------------- fixture enable_packet_aging_after_test teardown ends --------------------
+13/11/2025 12:55:13 conftest.run_yang_validation             L3665 INFO   | Running YANG validation on crdc-garnet-sonic-ud (post-test)
+13/11/2025 12:55:18 conftest.run_yang_validation             L3681 INFO   | YANG validation passed on crdc-garnet-sonic-ud (post-test)
+13/11/2025 12:55:18 conftest.temporarily_disable_route_check L3036 INFO   | Skipping temporarily_disable_route_check fixture
+13/11/2025 12:55:18 conftest.collect_after_test              L2823 INFO   | Dumping Disk and Memory Space information after test on crdc-garnet-sonic-ud
+13/11/2025 12:55:19 conftest.collect_after_test              L2827 INFO   | Collecting core dumps after test on crdc-garnet-sonic-ud
+13/11/2025 12:55:20 conftest.collect_after_test              L2838 INFO   | Collecting running config after test on crdc-garnet-sonic-ud
+13/11/2025 12:55:21 conftest.core_dump_and_config_check      L2984 INFO   | Core dump and config check passed for test_m2o_oversubscribe_lossy.py
+13/11/2025 12:55:21 __init__.pytest_terminal_summary         L0067 INFO   | Can not get Allure report URL. Please check logs
